@@ -64,6 +64,7 @@ function kyiv(street){
   if(!isNaN(street)) return(street + ' - не является улицей.Пожалуйста введите название улицы');
   street = street.replace(/\s+/g, '');
   if(street.length >= 30) return street.substr(0, 30) + '...';
+  return street;
 };
 
 console.log(kyiv(streetName));
