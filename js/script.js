@@ -54,3 +54,16 @@ console.log(arrResult);
 let namePerson = 'Артем' ; // 'Артем', 'Максим' or other value 
 let nameResult = namePerson === 'Артем' ? 'директор' : namePerson === 'Максим' ? 'преподаватель' : 'студент';
 console.log(nameResult)
+
+// HOMEWORK LESSON 4
+console.log('LESSON 4');
+
+let streetName = prompt('Введите название улицы');
+
+function kyiv(street){
+  if(!isNaN(street)) return(street + ' - не является улицей.Пожалуйста введите название улицы');
+  street = street.replace(/\s+/g, '');
+  if(street.length >= 30) return street.substr(0, 30) + '...';
+};
+
+console.log(kyiv(streetName));
