@@ -16,12 +16,7 @@ let week = [
 for (let i = 0; i < week.length; i++ ) {
   let day = week[i]
   if (i == 5 || i == 6) day = day.italics();
-  if (i === date.getDay()) day = day.bold();
-  console.log(day);
+  if (i+1 === date.getDay()) day = day.bold();
+  document.write('<div>' + day + '</div>');
 };
 
-// for (let item of week) {
-//   console.log(item);
-// };
-
-// Варіант перебору через let in =)
